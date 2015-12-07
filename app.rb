@@ -17,7 +17,6 @@ end
 
 
 get '/contacts/:id' do
-  @contacts = Contact.all
   @contact = Contact.find(params[:id])
   erb :show
 end
